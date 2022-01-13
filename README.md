@@ -1,77 +1,48 @@
-# **Tangram Pieces Matching and Recognition**
+# Process Scheduler
 
------
-
->  Team:
->
->   [@Hongbo Wang ](https://github.com/BOBWang1117)
->
->  @Yichu Li
->
->  
-
-## **Environment:**
-
-- Qt Creator
-
-  
-
-## **Details**
-
-- Type: term project
-
-- Teacher: 曾祥财
-
-- Computer Language: C++
-
-- Project Name: Word-Processing-programs
-
-- Time: 2020/05/12
-
-- Description: First, process several *.txt files, process the words in the files, sort (frequency of use), and output a .csv file. Then according to the .csv file (words, number of uses) the words that need to be completed in the puzzle are suggested.
-
-  
-
-## **Dependencies:** 
-
-- None
+This scheduler can complement a scheduler with four scheduling policy, First-In First-Out, Round Robin, Shortest Job First and preemptive SJF respectively.
 
 
 
-## **Install package:**
+## Development Environment
 
-- None
+- System: Linux Ubuntu 
+- Language: C++
+- Compiler: GNU g++
 
 
 
+## How to Run
 
-## **Run program:**
+### Compile
 
-Method 1:
+Open Terminal in Linux system(recommended system is Linux Ubuntu), enter:
 
-- copy ./code into Qt Creator
+```
+$ g++ -o monitor monitor.cpp
+$ make
+```
 
-  
+or:
 
-Method 2:
+```
+$ g++ -o monitor monitor.cpp
+$ g++ -o scheduler scheduler.cpp iotxt.cpp
+```
 
-- run Tangram.exe
+### Run
 
-  
+You can write your own file as the format:
 
- 
+| Arrival Time 1 | \t   | Command 1 | \t   | Duration 1 | \n   |
+| -------------- | ---- | --------- | ---- | ---------- | ---- |
+| Arrival Time 2 | \t   | Command 2 | \t   | Duration 2 | \n   |
+| Arrival Time 3 | \t   | Command 3 | \t   | Duration 3 | \n   |
 
-## **Example:**
+Then, put the file to the same path as the other compiled executable file.
 
-1. ![picture1](./picture/1.PNG)
+Enter this command in the Terminal (scheduler policy you can choose "FIFO", "RR", "SJF" or "PSJF"):
 
-   
-
-2. ![picture1](./picture/2.PNG)
-
-   
-
-3. ![picture1](./picture/3.PNG)
-
-   
-
+```
+$ ./scheduler [Job Description File Name] [Scheduler Policy]
+```
