@@ -1,44 +1,39 @@
-# Online Grading System
+# **Tangram Pieces Matching and Recognition**
 
 -----
 
->  Team: 
+>  Team:
 >
->  [@Hongbo Wang ](https://github.com/BOBWang1117) 
+>  [@Hongbo Wang ](https://github.com/BOBWang1117)
 >
 >  @Yichu Li
-
+>
 >  
 
 ## **Environment:**
 
-- System: Linux Ubuntu 
-
-- Language: C++
-
-- Compiler: GNU g++
+- Qt Creator
 
   
 
-## **Details**:
+## **Details**
 
 - Type: term project
 
-- Teacher: 罗少龙
+- Teacher: 曾祥财
 
-- Computer Language: MySQL, ASP.NET
+- Computer Language: C++
 
-- Project Name: Online Grading System
+- Project Name: Word-Processing-programs
 
-- Time: 2020/1/3
+- Time: 2020/05/12
 
-- Description: This scheduler can complement a scheduler with four scheduling policy, First-In First-Out, Round Robin, Shortest Job First and preemptive SJF respectively.
+- Description: The 13 convex polygons that can be spliced out of the tangram, find the maximum number of tangrams that each polygon can accommodate, and display it through the UI.
 
-  
 
 ## **Dependencies:** 
 
-- Chrome
+- None
 
 
 
@@ -48,44 +43,34 @@
 
 
 
+
 ## **Run program:**
 
-- add ASP.NET code into Visual Studio
-- add SQL code into SQL Server Management Studi
+Method 1:
 
+- copy ./code into Qt Creator
 
+  
 
-## How to Run:
+Method 2:
 
-### Compile
+- run Tangram.exe
 
-Open Terminal in Linux system(recommended system is Linux Ubuntu), enter:
+  
 
-```
-$ g++ -o monitor monitor.cpp
-$ make
-```
+ 
 
-or:
+## **Example:**
 
-```
-$ g++ -o monitor monitor.cpp
-$ g++ -o scheduler scheduler.cpp iotxt.cpp
-```
+1. ![picture1](./picture/1.PNG)
 
-### Run
+   
 
-You can write your own file as the format:
+2. ![picture1](./picture/2.PNG)
 
-| Arrival Time 1 | \t   | Command 1 | \t   | Duration 1 | \n   |
-| -------------- | ---- | --------- | ---- | ---------- | ---- |
-| Arrival Time 2 | \t   | Command 2 | \t   | Duration 2 | \n   |
-| Arrival Time 3 | \t   | Command 3 | \t   | Duration 3 | \n   |
+   
 
-Then, put the file to the same path as the other compiled executable file.
+3. ![picture1](./picture/3.PNG)
 
-Enter this command in the Terminal (scheduler policy you can choose "FIFO", "RR", "SJF" or "PSJF"):
+   
 
-```
-$ ./scheduler [Job Description File Name] [Scheduler Policy]
-```
